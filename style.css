@@ -1,0 +1,39 @@
+:root {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(90deg, red, blue);
+  color: #cdc332;
+}
+
+h1 {
+  text-align: center;
+}
+
+#flex-container {
+  background: #b19393d5;
+  margin: auto;
+  width: 650px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: row;
+  align-items: center;
+}
+
+#eightBall {
+  width: 350px;
+  height: 350px;
+  background: black;
+  color: white;
+  margin: auto;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#userAnswer {
+  font-size: 25px;
+}
