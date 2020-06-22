@@ -25,27 +25,36 @@ let userAnswer = document.querySelector("#userAnswer");
 button.addEventListener("click", function () {
     let randNum = eightBall(7);
     // alert(eightBall);
-    let answerText = "";
+    let answerText;
 
     // Create switch cases for random answers to user questions using the button when clicked by user
-    if (randNum === 0) {
-        answerText = "I Think Not!";
-    } else if (randNum === 1) {
-        answerText = "Maybe or Maybe Not!";
-    } else if (randNum === 2) {
-        answerText = "It's a Possible Chance!";
-    } else if (randNum === 3) {
-        answerText = "As I See It, Yes!";
-    } else if (randNum === 4) {
-        answerText = "Ask Again Later!";
-    } else if (randNum === 5) {
-        answerText = "It's Best Not Tell!";
-    } else if (randNum === 6) {
-        answerText = "Concentrate and Ask Again!";
-    } else if (randNum === 7) {
-        answerText = "Most Definitely and Absolutely Not!";
-    } else {
-        "Whatever You Like, so YES!!";
+    switch (randNum) {
+        case 0:
+            answerText = "I Think Not!";
+            break;
+        case 1:
+            answerText = "Maybe or Maybe Not!";
+            break;
+        case 2:
+            answerText = "It's a Possible Chance!";
+            break;
+        case 3:
+            answerText = "As I See It, Yes!";
+            break;
+        case 4:
+            answerText = "Ask Again Later!";
+            break;
+        case 5:
+            answerText = "It's Best Not Tell!";
+            break;
+        case 6:
+            answerText = "Concentrate and Ask Again!";
+            break;
+        case 7:
+            answerText = "Most Definitely and Absolutely Not!";
+            break;
+        default:
+            "Whatever You Like, so YES!!";
     }
 
     // Step 3 -- Display the answer inside the 8-Ball 
@@ -53,40 +62,24 @@ button.addEventListener("click", function () {
 });
 
 
-// Or try switch cases for random answers to user
-// switch (randNum) {
-//     case 0:
-//         randNum = 0
-//         answerText = "I Think Not!";
-//         break;
-//     case 1:
-//         randNum = 1
-//         answerText = "Maybe or Maybe Not!";
-//         break;
-//     case 2:
-//         randNum = 2
-//         answerText = "It's a Possible 50/50 Chance!";
-//         break;
-//     case 3:
-//         randNum = 3
-//         answerText = "As I See It, Yes!";
-//         break;
-//     case 4:
-//         randNum = 4
-//         answerText = "Ask Again Later!";
-//         break;
-//     case 5:
-//         randNum = 5
-//         answerText = "It's Best Not Tell!";
-//         break;
-//     case 6:
-//         randNum = 6
-//         answerText = "Concentrate and Ask Again!";
-//         break;
-//     case 7:
-//         randNum = 7
-//         answerText = "Most Definitely and Absolutely Not!";
-//         break;
-//     default:
-//         "Whatever You Like, so YES!!";
+// Or try if-else-if statements for random answers to user (alternative)
+// Use
+// if (randNum === 0) {
+//     answerText = "I Think Not!";
+// } else if (randNum === 1) {
+//     answerText = "Maybe or Maybe Not!";
+// } else if (randNum === 2) {
+//     answerText = "It's a Possible Chance!";
+// } else if (randNum === 3) {
+//     answerText = "As I See It, Yes!";
+// } else if (randNum === 4) {
+//     answerText = "Ask Again Later!";
+// } else if (randNum === 5) {
+//     answerText = "It's Best Not Tell!";
+// } else if (randNum === 6) {
+//     answerText = "Concentrate and Ask Again!";
+// } else if (randNum === 7) {
+//     answerText = "Most Definitely and Absolutely Not!";
+// } else {
+//     "Whatever You Like, so YES!!";
 // }
