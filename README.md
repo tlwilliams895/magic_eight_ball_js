@@ -1,5 +1,5 @@
 ## Magic 8-Ball
-[GitLab URL](https://tlwilliams895.gitlab.io/magic_8_ball_game)
+[GitLab URL](https://tlwilliams895.github.io/magic_eight_ball_js/)
 
 Concentrate on a Yes / No style question that you are dying to get answered and click on the Magic 8-Ball to know your fate.
 
